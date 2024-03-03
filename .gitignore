@@ -1,0 +1,57 @@
+
+# Ignore configuration files that may contain sensitive information
+wp-config.php
+wp-config-local.php
+wp-config-sample.php
+
+# Ignore large media files as they should not be version-controlled
+wp-content/uploads/
+
+# Ignore specific themes or plugins that are managed outside the project or are unnecessary for version control
+wp-content/themes/twenty*/
+wp-content/plugins/hello.php
+
+# Ignore node modules and vendor folders (if you're using Composer or npm)
+node_modules/
+vendor/
+
+# Ignore system files and folders
+.DS_Store
+Thumbs.db
+desktop.ini
+.sass-cache
+.idea/
+.vscode/
+
+# Ignore common backup files
+*.bak
+*.swp
+*.backup
+
+# Ignore the cache and temporary files
+wp-content/cache/
+wp-content/upgrade/
+wp-content/backups/
+
+# Ignore logs
+*.log
+
+# Ignore the wp-cli local configuration
+wp-cli.local.yml
+wp-cli.yml
+
+# Ignore export files
+*.sql
+*.tar.gz
+*.zip
+*.rar
+
+# Ignore environment-specific files like .env
+.env
+
+# Ignore the WordPress core files as they should not be version-controlled
+# Uncomment these lines if managing WordPress core updates through Composer or externally
+# /wp-admin/
+# /wp-includes/
+# /*.php
+# !wp-content
